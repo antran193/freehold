@@ -1,0 +1,39 @@
+.headfix{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: black;
+    padding: 10px;
+    
+}
+.icon-cloud-download{
+    display: flex;
+    float: right;
+    color: rgb(156, 154, 154);
+}
+.icon-shopping-cart{
+    display: flex;
+    float: right;
+    color: rgb(80, 80, 209);
+    margin-right: 10px;
+}
+.icon-angle-left{
+    color: rgb(156, 154, 154);
+}
+
+.headfix .icon-shopping-cart>a{
+    color: white;
+}
+.headfix i>a{
+    color: rgb(156, 154, 154);
+}
+.headfix i:hover a{
+    color: white;
+    text-decoration: none;
+}
+.headfix i.icon-angle-left:hover{
+    color: white;
+}
+.headfix i.icon-cloud-download:hover{
+    color: white;
+}
