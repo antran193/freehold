@@ -4,6 +4,7 @@
     position: fixed;
     background-color: black;
     padding: 10px;
+    z-index: 50;
     
 }
 .icon-cloud-download{
@@ -37,3 +38,209 @@
 .headfix i.icon-cloud-download:hover{
     color: white;
 }
+.bia{
+    background-image: url('../img/banner1.jpg');
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bia .freehold{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    border: white 1px solid;
+    padding: 5px;  
+}
+.bia .freehold a{
+    color: white;
+    font-size: 40;
+    margin-bottom: 0;
+}
+.bia .freehold:hover a{
+    text-decoration: none;
+}
+.bia .listmenu{
+    position: absolute;
+    right: 80px;
+    top: 100px;
+}
+.listmenu ul li{
+    display: inline;
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 20;
+}
+.listmenu ul li a{
+    position: relative;
+    color: white;
+}
+.listmenu ul li a:before{
+    position: absolute;
+    color: orange;
+    content: '.';
+    top: -5px;
+    left: 45%;
+    font-size:2em;
+    /* transform: translateX(-50%); */
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+.listmenu ul li:hover a:before,.listmenu ul li.show-active a:before{
+    opacity: 1;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    text-shadow: 10px 0 white,-10px 0 white;
+}
+.bia .listmenu ul li:hover a,.listmenu ul li.show-active a{
+    color: orange;
+    text-decoration: none;
+}
+.bia .listmenu ul li:hover a::before{
+    color: orange;
+    text-decoration: none;
+}
+
+.dropdownmenu{
+    display: none;
+}
+.bia .listmenu1 >ul.dropdownmenu{
+    list-style-type: none;
+}
+.bia .textbia{
+    top: 500px;
+    left: 100px;
+    position: absolute;
+}
+.bia .textbia h3{
+    color: white;
+    font-size: 40;
+}
+.bia .textbia p{
+    color: white;
+    font-size: 20;
+}
+.bia .listmenu1{
+    position: absolute;
+    bottom: 130px;
+    right: 200px;
+}
+.listmenu1 ul{
+    list-style-type: none;
+}
+.listmenu1 ul li{
+    padding: 8px;
+    font-size: 20;
+    color: white;
+}
+.listmenu1 .fa{
+    color: rgb(177, 118, 10);
+    padding: 5px;
+    margin-right: 20px;
+    border: white solid 1px;
+    font-size: 30;
+}
+.servicetext>h3{
+    color: rgb(81, 81, 206);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30;
+}
+.servicetext>p{
+    text-align: center;
+    color: black;
+    width: 70%;
+    margin: 50px auto;
+    font-size: 20;
+}
+.grid-service{
+    margin: 100px auto;
+    width: 80%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:10px;
+}
+.grid-service .grid-service-item{
+    padding: 10px;
+}
+.grid-service .grid-service-item>h3{
+    text-align: center;
+    margin-top: 30px;
+    color: cornflowerblue;
+}
+.grid-service .grid-service-item p{
+    text-align: center;
+    color: rgb(56, 54, 54);
+}
+.grid-service .grid-service-item i.fa{
+    padding-top:50px;
+    color: chocolate;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+.grid-service .grid-service-item:hover{
+    background-color: rgb(39, 39, 223);
+}
+.grid-service-item:hover h3,.grid-service-item:hover p{
+    color: white;
+}
+.ser{
+    background-image: url('../img/ser.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.bong{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-color: black;
+    opacity: 0.8;
+}
+.ser .ser-grid{
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 30%;
+    margin: 0 200px auto;
+    padding-top: 40px ;
+    padding: 10px;
+}
+.ser-grid .ser-grid-item1{
+    grid-column: 1 / span 2;
+}
+.ser-grid div a{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px
+}
+.ser-grid div a,p{
+    color: white;
+    padding: 10px;
+}
+.ser-grid div{
+    color: white;
+}
+.ser-grid .ser-grid-item1 .textcam{
+    color: orange;
+}
+.ser-grid div a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.ser-grid .ser-grid-item .glyphicon{
+    padding: 10px;
+    font-size: 20px;
+    color: orange;
+}
+
+
