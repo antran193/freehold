@@ -242,5 +242,204 @@
     font-size: 20px;
     color: orange;
 }
+.carousel-inner .item>.item-pr{
+    height: 500px;
+    width: 85%;
+    margin: 50px auto;
+    background-color: #c4e8ff;
+}
+div.item div.item-img{
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+.item-img img{
+    max-width: 100%;
+    height: 100%;
+}
+div.item div.item-text{
+    width: 40%;
+    float: right;
+    padding: 50px;
+    font-size: 30;
+}
+div.item div.item-text h3{
+    font-size: 35;
+    color: rgb(82, 82, 223);
+    font-weight: bold;
+}
+div>.carousel-indicators{
+    bottom: 40px;
+    margin-left: 0;
+    left: 35%;
+    padding: 30px;
+}
+div.carousel-indicators>li{
+    border: white solid 1px;
+    background-color: peru;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+div.carousel-indicators>li.active{
+    border: white solid 1px;
+    background-color: rgb(7, 212, 58);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.recen-work h2{
+    text-align: center;
+    color: rgb(56, 56, 212);
+    font-weight: bold;
+    font-size: 40;
+}
+.re-work-grid{
+    display: grid;
+    height: 400px;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin: 50px auto;
+}
+.re-work-it{
+    padding: 10px;
+}
+.re-work-it>img{
+    width: 100%;
+    object-fit: cover;
+}
+.re-work-it>h3{
+    color: chocolate;
+    font-weight: bold;
+}
+.re-work-it>p{
+    color: rgb(121, 117, 112);
+    padding: 0;
+}
+.fa{
+    color: chocolate;
+}
+.re-work-it>a{
+    color: rgb(121, 117, 112);
+}
+.re-work-it>a:hover{
+    color: chocolate;
+    text-decoration: none;
+}
+.fooder{
+    width: 100%;
+    height: 350px;
+    background-color: #0c182a;
+    position: relative;
+}
+.quicklink{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 300px;
+    height: 50%;
+    border-right: white solid 2px;
+}
+.sport{
+    position: absolute;
+    top: 50px;
+    left: 420px;
+    width: 350px;
+    height: 50%;
+    border-right: white solid 2px;
+}
+.letter{
+    position: absolute;
+    top: 50px;
+    left: 790px;
+    height: 50%;
+    right: 100px;
+    padding-left: 40px;
+}
+.footer{
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+}
+.fooder div h3{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.fooder div h4,.fooder div li{
+    color: rgb(187, 180, 180);
+    padding: 5px;
+    font-size: 15px;
+}
+.fooder div p{
+    color: rgb(187, 180, 180);
+    padding: 0px;
+    font-size: 15px;
+}
+.quicklink ol a li,ol li{
+    padding: 0;
+    list-style-type: none;
+}
+.quicklink ol a:hover>li{
+    text-decoration: none;
+    color: white;
+}
+.footer .footer-oran{
+    color: rgb(221, 121, 49);
+}
+.footer-oran:hover{
+    text-decoration: none;
+}
+.sport-mail{
+    color: rgb(187, 180, 180);
+    padding: 0px;
+    font-size: 15px;
+}
+.sport-mail:hover{
+    color: white;
+    text-decoration: none;
+}
+.sport .fa{
+    color:rgb(187, 180, 180) ;
+    margin-right: 10px;
+}
+.leter-email{
+    width: 400px;
+    height: 38px;
+    margin-top: 20px;
+}
+.leter-email a>.fa-mail-bulk{
+    color: white;
+    border: 0px solid #b06010;
+    background-color:#b06010;
+    border-width: 12px;
+    float: left;
+}
+#email{
+    float: left;
+    height: 38px;
+    width: 350px;
+    font-size: 20px;
+    padding-top: 5px ;
+}
+.footer{
+    position: absolute;
+    border-top: 2px white solid;
+    width: 900px;
+}
+.footer-icon{
+    float: right;
+    margin-top: 10px;
+}
+.footer h4{
+    float: left;
+}
+div.footer-icon i{
+    color: rgb(58, 57, 57);
+    background-color: rgb(206, 198, 198);
+    border: 0px solid;
+    /* border-width: 10px; */
+    /* border-radius: 50%; */
 
-
+}
