@@ -131,24 +131,36 @@ a.shop:hover i.icon-shopping-cart{
     text-align: center;
     color: white;
     padding: 10px 100px 0 100px;
+    opacity: 0;
 }
-.img-about:hover .img-ani{
+img.alex:hover + div.img-ani{
     transform: translateY(-320px);
     transition: all 0.5s;
+    opacity: 1;
 }
-.img-about:hover img{
+img.alex:hover{
     transform: rotateX(80deg);
     transition: all 0.5s;
     transform-origin: center bottom 0; 
 }
+
+
+.img-ani p{
+    text-align: center;
+    color: white;
+    padding: 10px 100px 0 100px;
+}
+
+
 div.img-ani>h3{
     font-size: 30px;
+    text-align: center;
 }
+
 img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
-
+    height: 100%;
 }
 .count{
     grid-area: count;
@@ -170,6 +182,10 @@ img{
     margin: 0;
 
 }
+.count1 h3:hover, .count:hover h3{
+    border-radius: 0 ;
+    transition: all 0.5s;
+}
 .text{
     grid-area: text;
 
@@ -187,4 +203,275 @@ img{
 .about p{
     padding: 10px;
     margin: 0;
+}
+.grid-team{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 85%;
+    margin: 50px auto;
+    grid-gap: 40px;
+    height: 280px;
+    
+}
+.item{
+    border: 5px solid #ddd;
+    background-clip: border-box;
+    box-shadow: 0 3px 6px 4px rgb(146, 148, 148);
+    position: relative;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.team>h2{
+    color: rgb(72, 41, 145);
+    font-size: 40px;
+    text-align: center;
+}
+.item>h2{
+    text-align: center;
+    color: chocolate;
+}
+/* .item>h3{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin: 20px;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+} */
+.icon-team>h3{
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.icon-team{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1.5s;
+    opacity: 0;
+    text-align: center;
+    padding-top: 50px;
+}
+.item .icon-team{
+    width: 246.66px;
+    height: 270px;
+    overflow:hidden;
+    border:0px solid rgba(0,0,0,0.7);
+    box-sizing:border-box;
+
+}
+.icon-team1{
+    width: 246.66px;
+    height: 270px;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+.item1:hover  .icon-team1{
+    width: 246.66px;
+    height: 270px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.253);
+    transform: translateX(0);
+    transition: all 0.5s;
+    opacity: 1;
+}
+.icon-team2{
+    width: 246.66px;
+    height: 270px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.253);
+    transform: rotate(360deg);
+    transition: all 0.5s;
+
+}
+.item1:hover h3, .item4:hover h3{
+    opacity: 1;
+}
+.item4:hover  .icon-team2{
+    width: 246.66px;
+    height: 270px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.253);
+    transform: rotate(0deg);
+    transition: all 0.5s;
+    opacity: 1;
+}
+.img-about>h3{
+    color: white;
+    font-size: 20px;
+}
+.icon-team ul li{
+    display: inline;
+}
+a.twi, a.rs, a.vk{
+    background-color: rgb(167, 160, 160);
+    border: 0 solid rgb(167, 160, 160);
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.fb{
+    background-color: rgb(167, 160, 160);
+    border: solid rgb(167, 160, 160);
+    border-width: 5px 10px 5px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+a i{
+    color: rgb(31, 30, 30);
+}
+.item3:hover .icon-team,.item3:hover h3,.item2:hover .icon-team,.item2:hover h3{
+    opacity: 1;
+}
+.item3:hover .icon-team,.item2:hover .icon-team{  
+	opacity: 1;
+    border: 32px solid rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.45);
+}
+a.fb:hover{
+    background-color:rgb(92, 92, 226) ;
+    border: 0 solid rgb(92, 92, 226) ;
+    border-width: 5px 10px 5px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+a.twi:hover{
+    background-color: turquoise;
+    border:0 solid turquoise;
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.rs:hover{
+    background-color: orange;
+    border: 0 solid orange;
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.vk:hover{
+    background-color: rgb(122, 5, 168);
+    border: 0 solid rgb(122, 5, 168);
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a:hover i{
+    color: white;
+}
+.fooder{
+    width: 100%;
+    margin-top: 100px ;
+    height:400px ;
+    position: relative;
+    background-color: #0c182a;
+}
+.quicklink{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.support{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.newleter{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+.foot{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.quicklink{
+    width: 200px;
+    height: 200px;
+    border-right: solid 2px white;
+}
+.support{
+    padding-left: 30px;
+    width: 400px;
+    height: 200px;
+    border-right: solid 2px white;
+}
+.newleter{
+    padding-left: 60px;
+    width: 500px;
+    height: 250px;
+}
+.foot{
+    margin-top: 50px;
+    border-top: solid 2px white;
+    height: 35px;
+    width: 1150px;
+    padding: 20px 0;
+}
+.foot .foot-icon{
+    float: right;
+}
+.foot p{
+    float: left;
+    margin: 0;
+}
+.foot p a{
+    color: orange;
+    text-decoration: none;
+}
+div h3{
+    color: white;
+}
+div ul li a, div ul li i, p,div ul li{
+    color: rgb(124, 117, 117);
+}
+.support ul{
+    padding-left: 15px;
+}
+li a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    padding: 2px;
+}
+li i{
+    margin: 5px;
+}
+button{
+    margin-left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: orange;
+}
+input{
+    height: 35px;
+    margin: 0;
+    width: 450px;
+}
+button i{
+    color: white;
+}
+.quicklink ul li a:hover{
+    color: white;
+}
+.support ul li a:hover{
+    color: white;
 }
