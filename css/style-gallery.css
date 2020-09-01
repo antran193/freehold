@@ -1,0 +1,338 @@
+html,body{
+    margin: 0;
+}
+.header-fix{
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(3, 6, 29);
+}
+.header-fix a{
+    color: rgb(161, 156, 156);
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+.header-fix a i.icon-shopping-cart{
+    color: blue;
+}
+.header-fix a i{
+    margin-right: 10px;
+    font-size: 30px;
+}
+.shop{
+    float: right;
+}
+.down{
+    float: right;
+}
+.header-fix a:hover{
+    color: white;
+}
+.baner1{
+    height: 300px;
+    width: 100%;
+    background-image: url('../img/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+}
+.baner1{
+    position: relative;
+}
+.freehold{
+    position: absolute;
+    top: 100px;
+    left: 130px;
+}
+.listhead{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.freehold{
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+}
+h3{
+    font-size: 30px;
+    margin: 5px auto;
+}
+.listhead ol li{
+    list-style-type: none;
+    display: inline;
+    padding: 50px;
+}
+.listhead ol li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.listhead ol li a{
+    position: relative;
+}
+.listhead ol li a:before{
+    position: absolute;
+    content: '.';
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+    /* margin-top: 5px; */
+    left: 45%;
+    opacity: 0;
+}
+.listhead ol li a:hover, .listhead ol li.ac a{
+    color: orange;
+}
+.listhead ol li a:hover::before, .listhead ol li.ac a:before{
+    opacity: 1;
+    text-shadow: 10px 0 white,-10px 0 white;
+    /* transform: translateX(0); */
+    transition: all 0.5s;
+}
+h2{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.gallery-grid{
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 50px auto;
+    grid-template-columns: repeat(3,1fr);
+    box-sizing: border-box;
+}
+.gallery-grid img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.gallery-grid .grid{
+    width: 350px;
+    height: 230px;
+}
+.grid{
+    border: 2px solid white;
+    box-shadow: 0 2px 2px 2px rgb(114, 113, 113) ;
+    overflow: hidden;
+}
+.grid{
+    position: relative;
+}
+.grid .grid-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* .grid-img::before{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    transform: rotateY(90deg);
+}
+.grid-img::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+.grid:hover .grid-img::before{
+    opacity: 1;
+} */
+.grid-text{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.cacnuavangtrang{
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.5);  
+}
+.grid img{
+    transform: scale(1);
+    transition: 1s ease-in-out;
+}
+.grid:hover img{
+    transform: scale(1.5);
+
+}
+.grid:hover .grid-text{
+    opacity: 1;
+    transform: translateY(0);
+}
+.fooder{
+    width: 100%;
+    margin-top: 100px ;
+    height:400px ;
+    position: relative;
+    background-color: #0c182a;
+}
+.quicklink{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.support{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.newleter{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+}
+.foot{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.quicklink{
+    width: 200px;
+    height: 200px;
+    border-right: solid 2px white;
+}
+.support{
+    padding-left: 30px;
+    width: 400px;
+    height: 200px;
+    border-right: solid 2px white;
+}
+.newleter{
+    padding-left: 60px;
+    width: 500px;
+    height: 250px;
+}
+.foot{
+    margin-top: 50px;
+    border-top: solid 2px white;
+    height: 35px;
+    width: 1150px;
+    padding: 20px 0;
+}
+.foot .foot-icon{
+    float: right;
+}
+.foot p{
+    float: left;
+    margin: 0;
+}
+.foot p a{
+    color: orange;
+    text-decoration: none;
+}
+.fooder div h3{
+    color: white;
+    font-size: 20px;
+}
+div ul li a, div ul li i, .newleter p,.foot p,div ul li{
+    color: rgb(124, 117, 117);
+    text-decoration: none;
+}
+.support ul{
+    padding-left: 15px;
+}
+li a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    padding: 2px;
+}
+li i{
+    margin: 5px;
+}
+button{
+    margin-left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: orange;
+}
+input{
+    height: 35px;
+    margin: 0;
+    width: 450px;
+}
+button i{
+    color: white;
+}
+.quicklink ul li a:hover{
+    color: white;
+}
+.support ul li a:hover{
+    color: white;
+}
+a.twi, a.rs, a.vk{
+    background-color: rgb(167, 160, 160);
+    border: 0 solid rgb(167, 160, 160);
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.fb{
+    background-color: rgb(167, 160, 160);
+    border: solid rgb(167, 160, 160);
+    border-width: 5px 10px 5px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+a i{
+    color: rgb(31, 30, 30);
+}
+a.fb:hover{
+    background-color:rgb(92, 92, 226) ;
+    border: 0 solid rgb(92, 92, 226) ;
+    border-width: 5px 10px 5px 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+a.twi:hover{
+    background-color: turquoise;
+    border:0 solid turquoise;
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.rs:hover{
+    background-color: orange;
+    border: 0 solid orange;
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a.vk:hover{
+    background-color: rgb(122, 5, 168);
+    border: 0 solid rgb(122, 5, 168);
+    border-width: 5px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+a:hover i{
+    color: white;
+}
